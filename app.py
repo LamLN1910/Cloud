@@ -20,7 +20,7 @@ db = SQLAlchemy(app)
 
 
 class Feedback(db.Model):
-    __tablename__ = 'danhgiacuasinhvien'
+    __tablename__ = 'danhgiacuasv'
     id = db.Column(db.Integer, primary_key=True)
     mssv = db.Column(db.String(200), unique=True)
     student = db.Column(db.String(200))
